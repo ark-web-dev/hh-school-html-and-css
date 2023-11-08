@@ -1,9 +1,9 @@
 {
   "name": "html-and-css-p",
   "version": "1.0.0",
-  "main": "index.js",
+  "homepage": "https://leonidfeskov.github.io/html-and-css-p/",
   "repository": "git@github.com:leonidfeskov/html-and-css-p.git",
-  "author": "Leonid Feskov <leonik89@gmail.com>",
+  "author": "Leonid Feskov",
   "license": "MIT",
   "scripts": {
     "dev": "parcel index.html",

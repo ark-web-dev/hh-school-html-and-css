@@ -1,0 +1,30 @@
+.header {
+    background-color: var(--color-dark);;
+    height: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__buttons {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+@buttons: search, profile, menu;
+
+.header-button-icon {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+
+    each(@buttons, {
+        &_@{value} {
+            background-image: url('images/@{value}.svg');
+        }
+    })
+}
