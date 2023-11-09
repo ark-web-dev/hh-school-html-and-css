@@ -1,0 +1,30 @@
+.menu {
+    display: none;
+
+    @media @screen-gt-s {
+        display: block;
+        color: #fff;
+        font-size: 16px;
+        flex-grow: 1;
+    }
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    &__item {
+        margin-left: 20px;
+
+        @media @screen-gt-m {
+            margin-left: 30px;
+        }
+    }
+
+    &__link {
+        color: inherit;
+        text-decoration: none;
+    }
+}

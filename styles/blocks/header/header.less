@@ -1,15 +1,21 @@
 .header {
     background-color: var(--color-dark);;
-    height: 60px;
-    padding-left: 15px;
-    padding-right: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+
+        @media @screen-gt-m {
+            height: 80px;
+        }
+    }
 
     &__buttons {
         display: flex;
         gap: 20px;
+        align-items: center;
     }
 }
 
@@ -21,10 +27,38 @@
     padding: 0;
     background-color: transparent;
     border: 0;
+    cursor: pointer;
 
     each(@buttons, {
         &_@{value} {
             background-image: url('images/@{value}.svg');
         }
     })
+
+    &_menu {
+        @media @screen-gt-s {
+            display: none;
+        }
+    }
+
+    &_full {
+        @media @screen-gt-s {
+            width: auto;
+            height: 38px;
+            border: 1px solid rgba(204, 204, 204, 0.5);
+            background-image: none;
+            color: #fff;
+            padding: 0 15px;
+            border-radius: 19px;
+            font-size: 14px;
+        }
+    }
+
+    &__text {
+        display: none;
+
+        @media @screen-gt-s {
+            display: inline;
+        }
+    }
 }

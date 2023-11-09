@@ -1,18 +1,33 @@
 .heading {
     font: 26px/1.2 var(--font-family-heading);
     font-weight: bold;
-
     margin: 0;
+
+    @media @screen-gt-s {
+        font-size: 36px;
+    }
 
     &_level-2 {
         font-size: 20px;
+
+        @media @screen-gt-s {
+            font-size: 30px;
+        }
     }
 
     &_level-3 {
         font-size: 18px;
+
+        @media @screen-gt-s {
+            font-size: 22px;
+        }
     }
 
     &_level-4 {
         font-size: 16px;
+
+        @media @screen-gt-s {
+            font-size: 18px;
+        }
     }
 }
