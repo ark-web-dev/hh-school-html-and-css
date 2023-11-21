@@ -1,0 +1,31 @@
+.button {
+    --color-light: 50%;
+    --color: hsl(206, 88%, var(--color-light));
+    display: inline-block;
+    height: 38px;
+    padding: 0 15px;
+    background-color: var(--color);
+    color: #fff;
+    font: 14px/38px Arial, sans-serif;
+    border: solid 1px transparent;
+    border-radius: 2px;
+    text-decoration: none;
+    cursor: pointer;
+    appearance: none;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-property: background-color;
+
+    &:hover, &_hover {
+        --color-light: 40%;
+    }
+
+    &:active, &_pressed {
+        --color-light: 35%;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2) inset;
+    }
+
+    &_danger {
+        --color: hsl(0, 66%, var(--color-light));
+    }
+}
