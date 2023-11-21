@@ -6,8 +6,8 @@
   "author": "Leonid Feskov",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html --public-url .",
+    "dev": "parcel *.html",
+    "build": "parcel build *.html --public-url './'",
     "deploy": "yarn build && gh-pages -d dist"
   },
   "devDependencies": {
