@@ -1,0 +1,47 @@
+.section-features {
+    background-color: #eeeeee;
+    padding-top: 30px;
+
+    @media @screen-gt-m {
+        padding-top: 45px;
+    }
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    @media @screen-gt-s {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        padding-right: 10px;
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 1.4;
+        @media @screen-gt-s {
+            padding-right: 0;
+        }
+        @media @screen-gt-m {
+            padding-right: 40px;
+            margin-bottom: 45px;
+        }
+    }
+
+    &__icon {
+        margin-right: 20px;
+        @media @screen-gt-s {
+            margin-right: 10px;
+        }
+        @media @screen-gt-m {
+            margin-right: 30px;
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
