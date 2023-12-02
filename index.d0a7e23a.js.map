@@ -1,0 +1,1 @@
+{"mappings":"AAAA;AAEA,SAAS,gBAAgB,CAAC,oBAAoB;IAC1C,IAAI,OAAO,SAAS,aAAa,CAAC,YAAY;AAClD","sources":["js/slider-init.js"],"sourcesContent":["'use strict';\n\ndocument.addEventListener('DOMContentLoaded', function () {\n    new Slider(document.querySelector('.slider'), 8000);\n});\n"],"names":[],"version":3,"file":"index.d0a7e23a.js.map","sourceRoot":"/__parcel_source_root/"}
