@@ -1,9 +1,9 @@
 {
   "name": "html-and-css-p",
   "version": "1.0.0",
-  "homepage": "https://leonidfeskov.github.io/html-and-css-p/",
-  "repository": "git@github.com:leonidfeskov/html-and-css-p.git",
-  "author": "Leonid Feskov",
+  "homepage": "https://ark-web-dev.github.io/hh-school-html-and-css/",
+  "repository": "git@github.com:ark-web-dev/hh-school-html-and-css.git",
+  "author": "Andreychenko Arkadiy",
   "license": "MIT",
   "scripts": {
     "dev": "parcel *.html",

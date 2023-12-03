@@ -1,0 +1,117 @@
+.slider {
+    margin: 0 auto;
+    position: relative;
+    padding: 30px 0;
+    height: 408px;
+    display: flex;
+    align-items: center;
+
+    @media @screen-gt-s {
+        padding: 60px 0;
+        height: 340px;
+    }
+
+    @media @screen-gt-m {
+        height: 480px;
+    }
+
+    &__window {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__slides {
+        height: 100%;
+        display: flex;
+        transition: transform 1.2s;
+    }
+
+    &__item {
+        height: 100%;
+    }
+
+    &__item-wrap {
+        height: 100%;
+        text-align: center;
+
+        @media @screen-gt-s {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            text-align: left;
+        }
+    }
+
+    &__item-image {
+        max-width: 100%;
+        margin-bottom: 12px;
+
+        @media @screen-gt-s {
+            margin-bottom: 0;
+            height: auto;
+            max-width: 332px;
+        }
+
+        @media @screen-gt-m {
+            max-width: 450px;
+        }
+    }
+
+    &__item-content {
+        max-width: 320px;
+        margin: 0 auto;
+
+        @media @screen-gt-s {
+            margin-left: 0;
+            max-width: 380px;
+        }
+
+        @media @screen-gt-m {
+            max-width: 390px;
+        }
+    }
+
+    &__item-button {
+        margin-top: 10px;
+
+        @media @screen-gt-s {
+            margin-top: 20px;
+        }
+    }
+
+    // indicators
+
+    &__indicators {
+        position: absolute;
+        bottom: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 15;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        @media @screen-gt-s {
+            bottom: 20px;
+        }
+    }
+
+    &__indicators li {
+        flex: 0 1 auto;
+        width: 8px;
+        height: 8px;
+        margin-right: 3px;
+        margin-left: 3px;
+        cursor: pointer;
+        background-color: #dfdedd;
+        border-radius: 50%;
+    }
+
+    &__indicators .active {
+        background-color: #212122;
+    }
+}

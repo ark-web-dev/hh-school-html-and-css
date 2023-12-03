@@ -7,6 +7,12 @@
         font-size: 16px;
         flex-grow: 1;
     }
+
+    &_top-line {
+        font-size: 14px;
+        color: #609fcf;
+        flex-grow: 0;
+    }
 }
 
 .menu-list {
@@ -26,5 +32,10 @@
     &__link {
         color: inherit;
         text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+            color: var(--color-accent);
+        }
     }
 }
