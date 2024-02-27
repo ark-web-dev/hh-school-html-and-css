@@ -1,0 +1,15 @@
+@links: app-store, google-play;
+
+.app-link {
+    width: 140px;
+    height: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+
+    each(@links, {
+        &_@{value} {
+            background-image: url('images/@{value}.png');
+        }
+    });
+}
